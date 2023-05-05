@@ -3,7 +3,7 @@ const cors = require("cors");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const path = require("path");
-const helmet = require("helmet");
+//const helmet = require("helmet");
 const routes = require("./routes/index");
 const app = express();
 
@@ -17,7 +17,7 @@ app.use(
   })
 );
 app.use(bodyParser.json());
-app.use(helmet());
+//app.use(helmet());
 
 // Routes
 app.use("/api", routes);
