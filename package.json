@@ -7,7 +7,8 @@
     "test": "jest",
     "start": "node server.js",
     "src": "cd frontend && npm install",
-    "server": "node server.js"
+    "server": "node server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "keywords": [],
   "author": "Oleksandr Andronyak",
